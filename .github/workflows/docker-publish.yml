@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
         
-      - name: Construir y publicar imagen Docker
+      - name: Construir y publicar imagen 
         uses: docker/build-push-action@v6
         with:
           context: .
